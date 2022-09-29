@@ -19,7 +19,7 @@ export const RestaurantCard = ({
     const restaurantImageUrl = `/assets/images/restaurant-${ random(1,5)}.jpg`;
 
   return (
-    <div className="col">
+    <div className="col animate__animated animate__fadeIn">
         <div className="card">
 
             <div className="row no-gutters">

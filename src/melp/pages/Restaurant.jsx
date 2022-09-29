@@ -31,7 +31,7 @@ export const Restaurant = () => {
           <img 
             src={restaurantImageUrl} 
             alt="" 
-            className="img-thumbnail"
+            className="img-thumbnail animate__animated animate__bounce"
           />
         </div>
 
