@@ -1,7 +1,16 @@
+import { useLocation, useNavigate } from 'react-router-dom';
 import { RestaurantCard } from '../components';
 import { useForm } from '../hooks/useForm';
+import queryString from 'query-string';
+import { getRestaurantByName } from '../helpers';
 
 export const Search = () => {
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { q = ''} = queryString.parse( location.search );
+
+  const restaurant = getRestaurantByName(q);
 
   const { searchText, onInputChange } = useForm({
     searchText: ''
@@ -10,7 +19,8 @@ export const Search = () => {
   const onSearchSubmit = (event) => {
       event.preventDefault();
       if( searchText.trim().length <= 1) return;
-      console.log({searchText});
+      //navigate(`?q=${searchText.toLowerCase().trim()}`);
+      navigate(`?q=${searchText}`);
   }
 
   return (
@@ -44,15 +54,17 @@ export const Search = () => {
         <div className="col-7">
             <h4>Results</h4>
             <hr />
-            <div className="alert alert-primary">
-                Search a restaurant
-            </div>
-
-            <div className="alert alert-danger">
-                No restaurant with <b>ABC</b>
-            </div>
-
-            
+            {
+              ( q === '')
+              ? <div className="alert alert-primary">Search a restaurant</div>
+              : ( restaurant.length === 0 ) && <div className="alert alert-danger">No restaurant with <b>{ q }</b></div>
+            }
+          
+            {
+              restaurant.map( restaurant => (
+                <RestaurantCard key={ restaurant.id }{...restaurant} />
+              ) )
+            }
 
         </div>
      </div>
