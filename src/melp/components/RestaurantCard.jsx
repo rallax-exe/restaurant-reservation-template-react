@@ -1,9 +1,6 @@
 import { Link } from 'react-router-dom';
 
 
-
-
-
 export const RestaurantCard = ({
     name,
     rating,
@@ -11,7 +8,6 @@ export const RestaurantCard = ({
     address,
     id,
 }) => {
-
 
     function random(min, max) {
         return Math.floor((Math.random() * (max - min + 1)) + min);
@@ -23,7 +19,7 @@ export const RestaurantCard = ({
 
         
         <div className="col">
-        <div className="card text-dark bg-light h-100">
+        <div className="card  text-dark bg-light  h-100 ">
                 <img src={restaurantImageUrl} className="card-img-top" alt={ name } />
                 <div className="card-body">
                     <h5 className="card-title">{ name }</h5>

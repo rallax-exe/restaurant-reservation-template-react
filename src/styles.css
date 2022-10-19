@@ -1,14 +1,24 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
 
-.card {
-   
-    width: 25rem;
-    
-    
+
+h1 {
+    font-size: 36px;
+    font-family: Poppins;
 }
 
-.card-img-top {
+.h1-main-page{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    text-align: center;
+    color: azure;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
 
-   
+.col {
+
+    margin-bottom: 1rem;
 
 }
