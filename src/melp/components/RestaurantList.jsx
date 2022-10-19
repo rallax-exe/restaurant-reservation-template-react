@@ -7,8 +7,9 @@ export const RestaurantList = ({ state }) => {
     const restaurants = getRestaurantesByState( state );
 
     return (
-    <div className="row rows-cols-1 row-cols-md-3 g-3">
-        {
+    <div className="row rows-cols-1 row-cols-md-3 g-4">
+        
+        {          
             restaurants.map( restaurant => (
                 <RestaurantCard key={ restaurant.id }
                                 {...restaurant}

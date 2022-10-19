@@ -1,7 +1,7 @@
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
+
 import { RestaurantList } from '../components/RestaurantList';
 import { getRestaurantById } from '../helpers';
-
 
 
 export const Restaurant = () => {
@@ -54,6 +54,8 @@ export const Restaurant = () => {
             </button>
 
           </div>
+
+          
         
     </div>
 
