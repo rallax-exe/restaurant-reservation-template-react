@@ -17,30 +17,34 @@ export const RestaurantCardSearch = ({
 
     return (
 
+
         
-        <div className="col">
-        <div className="card  text-dark bg-light  h-100">
+
+        <div className="card mb-3">
+            <div className="row g-0">
+                <div className="col-md-4">
                 <img src={restaurantImageUrl} className="card-img-top" alt={ name } />
+                </div>
+                <div className="col-md-8">
                 <div className="card-body">
                     <h5 className="card-title">{ name }</h5>
-                    
-                </div>
-
-            <ul className="list-group list-group-flush">
-                <li className="list-group-item  bg-light">{ address.state }</li>
-                <li className="list-group-item  bg-light">{ address.city }</li>
-            </ul>
-
-            <div className="card-footer">
-            <Link to={`/restaurant/${ id }`}>
-                                More
+                    <ul className="list-group list-group-flush">
+                        <li className="list-group-item  bg-light">State: { address.state }</li>
+                        <li className="list-group-item  bg-light">City: { address.city }</li>
+                        <li className="list-group-item  bg-light">
+                            <Link to={`/restaurant/${ id }`}>
+                                        More
                             </Link>
-
+                        </li>
+                    </ul>
+                </div>
                 
+                </div>
             </div>
+        </div>
 
-        </div>
+      
+
         
-        </div>
     )
 }
