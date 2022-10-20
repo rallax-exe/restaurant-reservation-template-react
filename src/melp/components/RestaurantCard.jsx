@@ -20,7 +20,11 @@ export const RestaurantCard = ({
         
         <div className="col">
         <div className="card  text-dark bg-light  h-100">
+            
+                <Link to={`/restaurant/${ id }`}>
                 <img src={restaurantImageUrl} className="card-img-top" alt={ name } />
+                </Link>
+                
                 <div className="card-body">
                     <h5 className="card-title">{ name }</h5>
                     
