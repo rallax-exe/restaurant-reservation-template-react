@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import { RestaurantCard } from '../components';
+import { RestaurantCardSearch } from '../components';
 import { useForm } from '../hooks/useForm';
 import queryString from 'query-string';
 import { getRestaurantByName } from '../helpers';
@@ -62,7 +62,7 @@ export const Search = () => {
           
             {
               restaurant.map( restaurant => (
-                <RestaurantCard key={ restaurant.id }{...restaurant} />
+                <RestaurantCardSearch key={ restaurant.id }{...restaurant} />
               ) )
             }
 

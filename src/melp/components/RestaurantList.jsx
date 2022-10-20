@@ -6,7 +6,7 @@ export const RestaurantList = ({ state }) => {
   
     const restaurants = getRestaurantesByState( state );
 
-    console.log({restaurants})
+    
 
     return (
     

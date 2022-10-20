@@ -8,6 +8,10 @@ h2 {
     font-family: Poppins;
 }
 
+.navbar-collapse{
+    text-align: center;
+}
+
 .h3-main-page {
     padding-top: 1rem;
     
@@ -40,6 +44,10 @@ h2 {
 
 }
 
+.span-location{
+    font-size: 16px;
+}
+
 .container{
 
   width: 100%;
@@ -48,4 +56,8 @@ h2 {
   padding-bottom: 50px;
   padding-top: 50px;
     background-color: #F2F2F2;
+}
+
+.card-img-top{
+    
 }

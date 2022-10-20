@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 
-export const RestaurantCard = ({
+export const RestaurantCardSearch = ({
     name,
     rating,
     contact,

@@ -13,14 +13,14 @@ export const Restaurants = () => {
           
             
             <div className="container">
-              <span>It looks like you're in Mexico City. Not correct? </span>
+              <span className="span-location">It looks like you're in Mexico City</span>
                 <hr />
               <h3 className="h3-main-page">Available Now</h3>
                 
               <RestaurantList state='Oaxaca' />
 
 
-              <h3 className="h3-main-page">Recomendados</h3>
+              <h3 className="h3-main-page">Recommended</h3>
                 
                 <RestaurantList state='Guerrero' />
 
