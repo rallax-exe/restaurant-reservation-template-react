@@ -35,18 +35,20 @@ export const Search = () => {
           <form onSubmit={ onSearchSubmit }>
             <input 
               type="text" 
-              placeholder="Search by state"
+              placeholder="Type a restaurant"
               className="form-control"
               name="searchText"
               autoComplete="off"
               value={ searchText }
               onChange={ onInputChange }
             />
+
+            <button className="btn btn-outline-primary mt-1">
+              Search
+            </button>
           </form>
 
-          <button className="btn btn-outline-primary mt-1">
-            Search
-          </button>
+          
 
 
         </div>
