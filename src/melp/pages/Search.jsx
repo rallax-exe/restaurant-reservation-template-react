@@ -24,8 +24,10 @@ export const Search = () => {
   }
 
   return (
+    <>
+    <h2 className="banner-page">Search</h2>
     <div className="container">
-        <h1>Search</h1>
+        <h1>Discover a new restaurant</h1>
         <hr />
 
     <div className="row">
@@ -71,5 +73,6 @@ export const Search = () => {
         </div>
      </div>
     </div>
+    </>
   )
 }

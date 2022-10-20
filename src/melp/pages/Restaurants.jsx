@@ -7,9 +7,13 @@ export const Restaurants = () => {
 
     return (
       <>
-          <h2 className="banner-main-page">Discover restaurants</h2>
+          <h2 className="banner-main-page">Wellcome to Melp</h2>
           
-        
+          <div className="banner container animated tada">
+          <div className=" big-text animated tada">New Restaurants!</div>
+            <div>Discover now</div>
+            
+          </div>
           
             
             <div className="container">
