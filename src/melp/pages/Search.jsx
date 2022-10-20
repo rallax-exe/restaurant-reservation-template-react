@@ -2,7 +2,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { RestaurantCardSearch } from '../components';
 import { useForm } from '../hooks/useForm';
 import queryString from 'query-string';
-import { getRestaurantByName } from '../helpers';
+import { getRestaurantesByState } from '../helpers';
 
 export const Search = () => {
 
@@ -10,7 +10,7 @@ export const Search = () => {
   const location = useLocation();
   const { q = ''} = queryString.parse( location.search );
 
-  const restaurant = getRestaurantByName(q);
+  const restaurant = getRestaurantesByState(q);
 
   const { searchText, onInputChange } = useForm({
     searchText: ''
@@ -30,12 +30,12 @@ export const Search = () => {
 
     <div className="row">
         <div className="col-5">
-          <h4>Search a Restaurant</h4>
+          <h4>Search a restaurant by state</h4>
           <hr />
           <form onSubmit={ onSearchSubmit }>
             <input 
               type="text" 
-              placeholder="Type a restaurant"
+              placeholder="Type a state"
               className="form-control"
               name="searchText"
               autoComplete="off"
