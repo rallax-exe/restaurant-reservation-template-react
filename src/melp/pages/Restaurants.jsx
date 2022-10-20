@@ -7,14 +7,27 @@ export const Restaurants = () => {
 
     return (
       <>
-          <h1 className="h1-main-page">Discover restaurants</h1>
+          <h2 className="banner-main-page">Discover restaurants</h2>
           
         
-          <div className="container">
-            <span>It looks like you're in Mexico City. Not correct? </span>
-            <hr />
-            <RestaurantList state='Oaxaca' />
-          </div>
+          
+            
+            <div className="container">
+              <span>It looks like you're in Mexico City. Not correct? </span>
+                <hr />
+              <h3 className="h3-main-page">Available Now</h3>
+                
+              <RestaurantList state='Oaxaca' />
+
+
+              <h3 className="h3-main-page">Recomendados</h3>
+                
+                <RestaurantList state='Guerrero' />
+
+            </div>
+
+            
+          
       </>
     )
   }

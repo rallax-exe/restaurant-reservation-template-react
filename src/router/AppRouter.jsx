@@ -6,8 +6,9 @@ import { Navbar } from '../ui';
 export const AppRouter = () => {
   return (
     <>
-
-        <Navbar />
+        
+          <Navbar />
+        
 
         <div className="">
           <Routes>

@@ -26,6 +26,10 @@ export const Restaurant = () => {
 
   return (
     
+    <>
+    <h2 className="banner-page">{ restaurant.name }</h2>
+    <div className="container">
+      
     <div className="row mt-5">
         <div className="col-4">
           <img 
@@ -37,7 +41,7 @@ export const Restaurant = () => {
 
         
           <div className="col-8">
-              <h3>{ restaurant.name }</h3>
+              
               <ul className="list-group list-group-flush">
                 <li className="list-group-item"> <b>State: </b>{ restaurant.address.state }</li>
                 <li className="list-group-item"> <b>City: </b>{ restaurant.address.city }</li>
@@ -56,8 +60,8 @@ export const Restaurant = () => {
           </div>
 
           
-        
+          </div>
     </div>
-
+    </>
   )
 }

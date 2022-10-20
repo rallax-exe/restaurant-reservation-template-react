@@ -2,12 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
 
 
-h1 {
+
+h2 {
     font-size: 36px;
     font-family: Poppins;
 }
 
-.h1-main-page{
+.h3-main-page {
+    padding-top: 1rem;
+    
+}
+
+.banner-main-page{
     padding-top: 1rem;
     padding-bottom: 1rem;
     
@@ -17,8 +23,29 @@ h1 {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
+.banner-page{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    text-align: center;
+    color: azure;
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+
 .col {
 
     margin-bottom: 1rem;
 
+}
+
+.container{
+
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+    background-color: #F2F2F2;
 }
