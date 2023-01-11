@@ -1,6 +1,7 @@
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 
-import { RestaurantList } from '../components/RestaurantList';
+import { RestaurantList } from '../components/';
+import { RestaurantMap } from '../components/';
 import { getRestaurantById } from '../helpers';
 
 
@@ -46,12 +47,12 @@ export const Restaurant = () => {
                 <li className="list-group-item"> <b>State: </b>{ restaurant.address.state }</li>
                 <li className="list-group-item"> <b>City: </b>{ restaurant.address.city }</li>
                 <li className="list-group-item"> <b>Street: </b>{ restaurant.address.street }</li>
-                <li className="list-group-item"> <b>Rating: </b>{ restaurant.rating }</li>
+                <li className="list-group-item"> <b>Rating: </b> ★★★★★ </li>
                 <li className="list-group-item"> <b>Phone: </b>{ restaurant.contact.phone }</li>
               </ul>
 
-            <button 
-                className="btn btn-outline-primary"
+            <button
+                className="btn btn-outline-primary mt-5"
                 onClick={ onNavigateBack }
             >
                 Go back
@@ -59,7 +60,8 @@ export const Restaurant = () => {
 
           </div>
 
-          
+          <RestaurantMap />
+
           </div>
     </div>
     </>

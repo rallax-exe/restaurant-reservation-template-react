@@ -4,6 +4,7 @@ import { useForm } from '../hooks/useForm';
 import queryString from 'query-string';
 import { getRestaurantesByState } from '../helpers';
 
+
 export const Search = () => {
 
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ export const Search = () => {
   return (
     <>
     <h2 className="banner-page">Search</h2>
-    <div className="container">
+    <div className="container search">
         <h1>Discover a new restaurant</h1>
         <hr />
 

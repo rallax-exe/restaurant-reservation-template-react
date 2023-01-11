@@ -16,9 +16,7 @@ export const RestaurantCardSearch = ({
     const restaurantImageUrl = `/assets/images/restaurant-${random(1, 5)}.jpg`;
 
     return (
-
-
-        
+       
 
         <div className="card mb-3">
             <div className="row g-0">

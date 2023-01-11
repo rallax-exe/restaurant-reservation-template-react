@@ -11,7 +11,7 @@ export const RestaurantList = ({ state }) => {
     return (
     
            
-    <div className="row rows-cols-1 row-cols-md-4 ">
+    <div className="row rows-cols-1 row-cols-md-4">
     
         
         {          

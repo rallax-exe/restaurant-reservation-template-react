@@ -16,7 +16,7 @@ export const Restaurants = () => {
           </div>
           
             
-            <div className="container">
+            <div className="container mb-3">
               <span className="span-location">It looks like you're in Mexico City</span>
                 <hr />
               <h3 className="h3-main-page">Available Now</h3>
