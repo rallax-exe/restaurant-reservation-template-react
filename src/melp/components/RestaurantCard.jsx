@@ -35,7 +35,7 @@ export const RestaurantCard = ({ name, rating, contact, address, id, }) => {
                         <button
                             className="btn btn-outline-primary"
                         >
-                            <Link to={`/restaurant/${id}`}  style={{ textDecoration: 'none' }}>
+                            <Link to={`/restaurant/${id}`} style={{ textDecoration: 'none' }}>
                                 More
                             </Link>
                         </button>
