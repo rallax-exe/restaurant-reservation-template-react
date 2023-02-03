@@ -1,9 +1,42 @@
 import { Link, NavLink } from 'react-router-dom';
 
 
-export const Navbar = () => {
-    return (
 
+export const Navbar = () => {
+
+    const toggleMenu = () => {
+        document.body.classList.toggle("open");
+    };
+
+    return (
+        <>
+            <NavLink
+                className="navbar"
+                to="/"
+            >
+                <img className="navbar-logo" src="../../../assets/images/navbar/logo.png" />
+            </NavLink>
+            <button className="navbar-burger" onClick={toggleMenu}></button>
+            <nav className="menu">
+                <NavLink
+                    //className={({ isActive }) => `nav-item  nav-link ${isActive ? 'active' : ''}`}
+                    to="/restaurants"
+                    onClick={ toggleMenu }
+
+                >
+                    Home
+                </NavLink>
+
+                <NavLink
+                    //className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
+                    to="/search"
+                    onClick={ toggleMenu }
+                >
+                    Search Restaurants
+                </NavLink>
+            </nav>
+        </>
+        /*
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
@@ -38,7 +71,7 @@ export const Navbar = () => {
         </nav>
 
 
-
+    */
 
     )
 }

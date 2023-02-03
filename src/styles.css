@@ -1,5 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 
 body {
 
@@ -8,98 +12,208 @@ body {
 }
 
 h2 {
-    font-size: 36px;
-    font-family: Poppins;
+  font-size: 36px;
+  font-family: Poppins;
 }
 
-.navbar-collapse{
-    text-align: center;
+.navbar-collapse {
+  text-align: center;
 }
 
 .h3-main-page {
-    padding-top: 1rem;
-    
+  padding-top: 1rem;
+
 }
 
-.banner-main-page{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    
-    text-align: center;
-    color: azure;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+.banner-main-page {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+
+  text-align: center;
+  color: azure;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
-.banner-page{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    
-    text-align: center;
-    color: azure;
-    background: rgb(2,0,36);
-    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+.banner-page {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+
+  text-align: center;
+  color: azure;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(270deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
 
 .col {
 
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 
 }
 
-.span-location{
-    font-size: 16px;
+.span-location {
+  font-size: 16px;
 }
 
-.container{
+.container {
 
   width: 100%;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
   padding-top: 50px;
-    background-color: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
 
 
 .banner {
-    width: 100%;
-    background:url(http://s6.favim.com/orig/150112/background-cold-gif-nature-Favim.com-2380226.gif);
-    /*https://i0.wp.com/media.giphy.com/media/5ERaOy5fQEIAU/giphy.gif*/
-    background-size: cover;
-    font-size: 36px;
-    color: #fff;
-    text-align: center;
-    padding: 40px 15px;
-  }
-  
-  .big-text {
-    font-size: 45px;
-    font-weight:800;
-    animation-delay: 1s;
-  }
-  .banner a {
-    display: inline-block;
-    background: #fff;
-    color: #36465d;
-    text-transform: uppercase;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 40px;
-    transition: .3s;
+  width: 100%;
+  background: url(http://s6.favim.com/orig/150112/background-cold-gif-nature-Favim.com-2380226.gif);
+  /*https://i0.wp.com/media.giphy.com/media/5ERaOy5fQEIAU/giphy.gif*/
+  background-size: cover;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  padding: 40px 15px;
+}
+
+.big-text {
+  font-size: 45px;
+  font-weight: 800;
+  animation-delay: 1s;
+}
+
+.banner a {
+  display: inline-block;
+  background: #fff;
+  color: #36465d;
+  text-transform: uppercase;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 40px;
+  transition: .3s;
+}
+
+.banner a:hover {
+  background: #333;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.menu-item {
+
+  animation-delay: 0.4s;
+
+}
+
+
+/**/
+
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navbar,
+.navbar-burger,
+.menu,
+.background {
+  position: fixed;
+}
+
+.navbar {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 72px;
+  padding-left: 20px;
+  padding-right: 72px;
+  background: #19191c;
+  color: #f9f9f9;
+}
+
+.navbar>button {
+  font-size: 28px;
+}
+
+.navbar-logo {
+  height: 25px;
+}
+
+.navbar-burger {
+  z-index: 3;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  background-image: url("../assets/images/navbar/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.open .navbar-burger {
+  background-image: url("../assets/images/navbar/close.svg");
+}
+
+
+
+.menu {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+body.open .menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu>a {
+  color: #f9f9f9;
+  font-size: 32px;
+  font-family: "Euclid Circular A";
+  text-decoration: none;
+}
+
+body.open .menu>a {
+  animation: appear 0.3s both;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    translate: 0 50px;
   }
 
-  .banner a:hover {
-    background: #333;
-    color: #fff;
-    padding: 15px 20px;
+  100% {
+    opacity: 1;
   }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    
-  }
+}
