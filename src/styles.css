@@ -5,9 +5,22 @@
 }
 
 
+
 body {
 
-  background-color: #4b537d;
+  background-color: #d5d5d5;
+
+}
+
+ul {
+
+  list-style: none;
+
+}
+
+a {
+
+  text-decoration: none;
 
 }
 
@@ -79,6 +92,22 @@ h2 {
   padding: 40px 15px;
 }
 
+.banner-bottom {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(http://s6.favim.com/orig/150112/background-cold-gif-nature-Favim.com-2380226.gif);
+  /*https://i0.wp.com/media.giphy.com/media/5ERaOy5fQEIAU/giphy.gif*/
+  background-size: cover;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  padding: 40px 15px;
+}
+
 .big-text {
   font-size: 45px;
   font-weight: 800;
@@ -102,12 +131,29 @@ h2 {
   padding: 15px 20px;
 }
 
-footer {
-  position: fixed;
+/* Footer */
+
+.container-footer {
+  
   bottom: 0;
-  width: 100%;
+  
+  background-color: rgba(9, 9, 121, 1);
 
 }
+
+.img-social{
+
+  height: 70px;
+  padding: 1rem;
+
+}
+
+.container-copyright{
+
+  background-color: rgb(7, 7, 91);
+
+}
+
 
 .menu-item {
 
@@ -116,3 +162,53 @@ footer {
 }
 
 
+/* Banners */
+
+.banner-available-now{
+
+  background-color: red;
+  padding: 1rem;
+  color: #F2F2F2;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 213, 255, 0) 100%);
+  margin: 2rem 0rem;
+
+}
+
+.banner-recommend{
+
+  background-color: red;
+  padding: 1rem;
+  color: #F2F2F2;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 213, 255, 0) 100%);
+  margin: 2rem 0rem;
+
+}
+
+
+.explore-state {
+
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+
+}
+
+
+.explore-list{
+
+  
+  font-weight: 500;
+  color: #333;
+
+}
+
+.explore-list:hover{
+
+  color:rgba(0, 212, 255, 1);
+  font-weight: 500;
+
+}
