@@ -31,9 +31,9 @@ export const Restaurant = () => {
     <h2 className="banner-page">{ restaurant.name }</h2>
     <div className="container">
       
-    <div className="row mt-5">
-        <div className="col-4">
-          <img 
+    <div className="row row-list-mobile ">
+        <div className="col-3 ">
+          <img
             src={restaurantImageUrl} 
             alt="" 
             className="img-thumbnail animate__animated animate__bounce"

@@ -28,36 +28,32 @@ export const Search = () => {
     <>
     <h2 className="banner-page">Search</h2>
     <div className="container search">
-        <h1>Discover a new restaurant</h1>
+        <h3 className="h3-search">Discover a new restaurant</h3>
         <hr />
 
-    <div className="row">
-        <div className="col-5">
-          <h4>Search a restaurant by state</h4>
-          <hr />
+    <div className="row row-search">
+        <div className="col-12 mt-4">
+          <span>Search a restaurant by state</span>
           <form onSubmit={ onSearchSubmit }>
             <input 
               type="text" 
               placeholder="Type a state"
-              className="form-control"
+              className="form-control form-search mt-3"
               name="searchText"
               autoComplete="off"
               value={ searchText }
               onChange={ onInputChange }
             />
 
-            <button className="btn btn-outline-primary mt-1">
+            <button className="btn btn-outline-primary mt-3">
               Search
             </button>
           </form>
 
-          
-
-
         </div>
 
-        <div className="col-7">
-            <h4>Results</h4>
+        <div className="col-12 mt-5">
+            <span>Results</span>
             <hr />
             {
               ( q === '')

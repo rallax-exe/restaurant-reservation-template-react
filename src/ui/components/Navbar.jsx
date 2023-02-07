@@ -42,7 +42,10 @@ export const Navbar = () => {
                         </div>
                         <div className="offcanvas-body">
                             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li className="nav-item">
+                                <li 
+                                    className="nav-item"
+                                    data-bs-toggle="offcanvas"
+                                >
                                     <NavLink
                                         className="nav-link active"
                                         aria-current="page"
@@ -51,7 +54,10 @@ export const Navbar = () => {
                                         Home
                                     </NavLink>
                                 </li>
-                                <li className="nav-item">
+                                <li 
+                                    className="nav-item"
+                                    data-bs-toggle="offcanvas"
+                                >
                                     <NavLink
                                         className="nav-link active"
                                         aria-current="page"
@@ -59,25 +65,18 @@ export const Navbar = () => {
                                     >
                                         Search a restaurant
                                     </NavLink>
-                                </li>
-                                <li className="nav-item dropdown">
+                                </li>                               
+                                <li 
+                                    className="nav-item"
+                                    data-bs-toggle="offcanvas"
+                                >
                                     <NavLink
-                                        className="nav-link dropdown-toggle"
-                                        role="button"
-                                        data-bs-toggle="dropdown"
-                                        aria-expanded="false"
-                                        to="/"
+                                        className="nav-link active"
+                                        aria-current="page"
+                                        to="/search"
                                     >
-                                        More
+                                        Contact 
                                     </NavLink>
-                                    <ul className="dropdown-menu dropdown-menu-dark">
-                                        <li><NavLink className="dropdown-item" to="/">Action</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/">Another action</NavLink></li>
-                                        <li>
-                                            <hr className="dropdown-divider" />
-                                        </li>
-                                        <li><NavLink className="dropdown-item" to="/">Something else here</NavLink></li>
-                                    </ul>
                                 </li>
                             </ul>
                             <form className="d-flex mt-3" onSubmit={onSearchSubmit}>

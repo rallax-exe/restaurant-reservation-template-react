@@ -1,14 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
 
-* {
+html {
   box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-
+/**/
 
 body {
 
   background-color: #d5d5d5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  /*background-color: rgb(153, 143, 143);*/
+
+}
+
+
+/* Globales */
+
+h1, h3 {
+
+  font-family: 'Poppins';
+  margin: 0 0 5rem 0;
+
+}
+
+h1 {
+
+  font-size: 5rem;
+
+}
+
+h2 {
+
+  font-size: 3.5rem;
+  font-family: Poppins;
+}
+
+h3 {
+
+  font-size: 2.5rem;
+
+}
+
+h5 {
+
+  font-size: 1.8rem;
 
 }
 
@@ -24,9 +66,14 @@ a {
 
 }
 
-h2 {
-  font-size: 36px;
-  font-family: Poppins;
+
+
+/* Contenido */
+
+.navbar{
+
+  padding: 2rem 2rem;
+
 }
 
 .navbar-collapse {
@@ -39,7 +86,7 @@ h2 {
 }
 
 .banner-main-page {
-  padding-top: 5rem;
+  padding-top: 8rem;
   padding-bottom: 1rem;
 
   text-align: center;
@@ -49,7 +96,7 @@ h2 {
 }
 
 .banner-page {
-  padding-top: 5rem;
+  padding-top: 8rem;
   padding-bottom: 1rem;
 
   text-align: center;
@@ -86,7 +133,7 @@ h2 {
   background: url(http://s6.favim.com/orig/150112/background-cold-gif-nature-Favim.com-2380226.gif);
   /*https://i0.wp.com/media.giphy.com/media/5ERaOy5fQEIAU/giphy.gif*/
   background-size: cover;
-  font-size: 36px;
+  font-size: 2rem;
   color: #fff;
   text-align: center;
   padding: 40px 15px;
@@ -109,7 +156,7 @@ h2 {
 }
 
 .big-text {
-  font-size: 45px;
+  font-size: 4rem;
   font-weight: 800;
   animation-delay: 1s;
 }
@@ -210,5 +257,95 @@ h2 {
 
   color:rgba(0, 212, 255, 1);
   font-weight: 500;
+
+}
+
+
+.btn {
+
+  font-size: 1.4rem;
+
+}
+
+.form-search{
+
+  font-size: 1.5rem;
+
+}
+
+
+@media ( max-width: 600px ) {
+
+  .row-cards {
+
+    flex-direction: column;
+
+  }
+
+  .container {
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+  }
+
+  .card {
+
+    margin-bottom: 1.5rem;
+
+  }
+
+  .img-card-list{
+
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+
+  }
+
+  .row-list-mobile{
+
+    
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .col-3{
+    
+    width: 80%;
+    
+  }
+
+  .col-8 {
+
+    margin-top: 3rem;
+
+  }
+
+  .navbar{
+
+    padding: 2rem 0rem;
+  
+  }
+
+  .banner-bottom {
+
+    height: 30rem;
+
+  }
+
+  .h3-search{
+
+    margin: 0px;
+
+  }
+
+  .row-search{
+
+    flex-direction: column;
+    align-items: center;
+
+  }
 
 }

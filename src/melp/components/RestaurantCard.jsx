@@ -17,7 +17,7 @@ export const RestaurantCard = ({ name, rating, contact, address, id, }) => {
                 <div className="card  text-dark bg-light  h-100">
 
                     <Link to={`/restaurant/${id}`}>
-                        <img src={restaurantImageUrl} className="card-img-top" alt={name} />
+                        <img src={restaurantImageUrl} className="img-card-list card-img-top" alt={name} />
                     </Link>
 
                     <div className="card-body">
