@@ -1,4 +1,4 @@
-# React Hooks
+# Single Page Aplication
 
 Single Page Aplication, Restaurants Reservation Template with React (JavaScript).
 
