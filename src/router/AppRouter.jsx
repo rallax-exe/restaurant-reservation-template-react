@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { Restaurant, Restaurants, Search } from '../melp/';
+import { Restaurant, Restaurants, Search, Contact } from '../melp/';
 import { Footer, Navbar } from '../ui';
 import ScrollToTop from '../melp/hooks/useScrollTop';
 
@@ -14,6 +14,7 @@ export const AppRouter = () => {
         <Routes>
           <Route path="search" element={<Search />} />
           <Route path="restaurants" element={<Restaurants />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="restaurant/:id" element={<Restaurant />} />
           <Route path="/" element={<Navigate to="/restaurants" />} />
         </Routes>

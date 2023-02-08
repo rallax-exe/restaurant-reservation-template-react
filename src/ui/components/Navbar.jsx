@@ -44,7 +44,7 @@ export const Navbar = () => {
                             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li 
                                     className="nav-item"
-                                    data-bs-toggle="offcanvas"
+                                    data-bs-toggle="#offcanvas"
                                 >
                                     <NavLink
                                         className="nav-link active"
@@ -56,7 +56,7 @@ export const Navbar = () => {
                                 </li>
                                 <li 
                                     className="nav-item"
-                                    data-bs-toggle="offcanvas"
+                                    data-bs-toggle="#offcanvas"
                                 >
                                     <NavLink
                                         className="nav-link active"
@@ -68,12 +68,12 @@ export const Navbar = () => {
                                 </li>                               
                                 <li 
                                     className="nav-item"
-                                    data-bs-toggle="offcanvas"
+                                    data-bs-toggle="#offcanvas"
                                 >
                                     <NavLink
                                         className="nav-link active"
                                         aria-current="page"
-                                        to="/search"
+                                        to="/contact"
                                     >
                                         Contact 
                                     </NavLink>
