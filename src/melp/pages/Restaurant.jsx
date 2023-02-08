@@ -10,7 +10,7 @@ export const Restaurant = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const restaurant = getRestaurantById( id );
-  const restaurantImageUrl = `/assets/images/restaurant-${ random(1,5)}.jpg`;
+  const restaurantImageUrl = `/src/melp/img/restaurant-${ random(1,5)}.jpg`;
 
   const onNavigateBack = () =>{
     navigate(-1);
@@ -35,7 +35,7 @@ export const Restaurant = () => {
         <div className="col-3 ">
           <img
             src={restaurantImageUrl} 
-            alt="" 
+            alt="Img" 
             className="img-thumbnail animate__animated animate__bounce"
           />
         </div>

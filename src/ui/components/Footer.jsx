@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 
 
 export const Footer = () => {
@@ -16,13 +16,13 @@ export const Footer = () => {
 
                         <span className="img-social" role="button">
                             <i className="fab fa-facebook-f">
-                               <a href="https://github.com/rallax-exe" target="_blank"><img className="img-social" src="../../../assets/images/socialMedia/githubLogo.png" alt="" /></a> 
+                               <a href="https://github.com/rallax-exe" target="_blank"><img className="img-social" src="/src/melp/img/socialMedia/githubLogo.png" alt="" /></a> 
                             </i>
                         </span>
 
                         <span>
                             <i className="fab fa-facebook-f">
-                                <a href="https://www.linkedin.com/in/raul-lara-hernandez/" target="_blank"><img className="img-social" src="../../../assets/images/socialMedia/linkedinLogo.png" alt="" /></a>
+                                <a href="https://www.linkedin.com/in/raul-lara-hernandez/" target="_blank"><img className="img-social" src="/src/melp/img/socialMedia/linkedinLogo.png" alt="" /></a>
                             </i>
                         </span>
                     </section>

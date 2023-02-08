@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 
+
 export const RestaurantCard = ({ name, rating, contact, address, id, }) => {
 
 
@@ -8,7 +9,7 @@ export const RestaurantCard = ({ name, rating, contact, address, id, }) => {
         return Math.floor((Math.random() * (max - min + 1)) + min);
     }
 
-    const restaurantImageUrl = `/assets/images/restaurant-${random(1, 5)}.jpg`;
+    const restaurantImageUrl = `/src/melp/img/restaurant-${random(1, 5)}.jpg`;
 
     return (
         <>

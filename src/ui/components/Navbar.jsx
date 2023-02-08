@@ -31,7 +31,7 @@ export const Navbar = () => {
                         to="/restaurants"
                     >
                         <span className="navbar-logo-text">Melp</span>
-                        <img className="navbar-logo" src="../../../assets/images/navbar/logo.png" />
+                        <img className="navbar-logo" src="/src/melp/img/navbar/logo.png" />
                     </NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                         <span className="navbar-toggler-icon"></span>
