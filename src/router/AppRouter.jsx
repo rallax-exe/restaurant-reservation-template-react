@@ -16,7 +16,8 @@ export const AppRouter = () => {
           <Route path="restaurants" element={<Restaurants />} />
           <Route path="contact" element={<Contact />} />
           <Route path="restaurant/:id" element={<Restaurant />} />
-          <Route path="/" element={<Navigate to="/restaurants" />} />
+          <Route path="/" element={<Restaurants />} />
+          <Route path="/*" element={ <Navigate to="/" /> } /> 
         </Routes>
       </div>
 
