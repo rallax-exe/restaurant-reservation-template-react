@@ -1,6 +1,6 @@
 # React Hooks
 
-Single Page Aplication, Restarutants Reservation Template with React (JavaScript).
+Single Page Aplication, Restaurants Reservation Template with React (JavaScript).
 
 ## You Can See The Result Here
 
