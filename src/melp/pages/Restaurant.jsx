@@ -10,7 +10,7 @@ export const Restaurant = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const restaurant = getRestaurantById( id );
-  const restaurantImageUrl = `/src/melp/img/restaurant-${ random(1,5)}.jpg`;
+  const restaurantImageUrl = `/img/restaurants/restaurant-${ random(1,5)}.jpg`;
 
   const onNavigateBack = () =>{
     navigate(-1);
