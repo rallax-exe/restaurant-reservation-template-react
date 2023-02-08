@@ -88,13 +88,19 @@ export const Navbar = () => {
                                 <input
                                     type="text"
                                     placeholder="Type a state"
-                                    className="form-control me-2"
+                                    className="form-control me-2 label-search"
                                     name="searchText"
                                     autoComplete="off"
                                     value={searchText}
                                     onChange={onInputChange}
                                 />
-                                <button className="btn btn-outline-primary active">Search</button>
+                                <button 
+                                    className="btn btn-outline-primary active"
+                                    data-bs-dismiss="offcanvas" 
+                                    data-bs-target="#my-offcanvas" 
+                                >
+                                    Search
+                                </button>
                             </form>
                         </div>
                     </div>
