@@ -24,7 +24,7 @@ export const Restaurants = () => {
 
 
       <div className="container mb-3">
-        <span className="span-location">It looks like you're in Mexico City</span>
+        <span className="span-location">It looks like you're in Mexico City 📍</span>
         <hr />
         <h3 className="h3-main-page banner-available-now">Available Now</h3>
 
@@ -43,19 +43,19 @@ export const Restaurants = () => {
 
         <div className="explore-state">
           <ul>
-            <li><Link className="explore-list">Puebla</Link></li>
-            <li><Link className="explore-list">Guerreo</Link></li>
-            <li><Link className="explore-list">Chiapas</Link></li>
+            <li><Link className="explore-list" to="/search?q=puebla">Puebla</Link></li>
+            <li><Link className="explore-list" to="/search?q=guerrero">Guerreo</Link></li>
+            <li><Link className="explore-list" to="/search?q=chiapas">Chiapas</Link></li>
           </ul>
           <ul>
-            <li><Link className="explore-list">Guanajuato</Link></li>
-            <li><Link className="explore-list">Tabasco</Link></li>
-            <li><Link className="explore-list">Sinaloa</Link></li>
+            <li><Link className="explore-list" to="/search?q=guanajuato">Guanajuato</Link></li>
+            <li><Link className="explore-list" to="/search?q=tabasco">Tabasco</Link></li>
+            <li><Link className="explore-list" to="/search?q=sinaloa">Sinaloa</Link></li>
           </ul>
           <ul>
-            <li><Link className="explore-list">Campeche</Link></li>
-            <li><Link className="explore-list">Durango</Link></li>
-            <li><Link className="explore-list">Quintana Roo</Link></li>
+            <li><Link className="explore-list" to="/search?q=campeche">Campeche</Link></li>
+            <li><Link className="explore-list" to="/search?q=durango">Durango</Link></li>
+            <li><Link className="explore-list" to="/search?q=quintana%20roo">Quintana Roo</Link></li>
           </ul>
         </div>
 

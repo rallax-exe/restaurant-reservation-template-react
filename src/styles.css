@@ -293,6 +293,25 @@ a {
 
 }
 
+.img-card-search{
+
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+@media ( max-width: 1200px ) {
+
+  .navbar{
+
+    padding: 1rem 0rem;
+
+  }
+  
+
+}
+
 
 @media ( max-width: 600px ) {
 
@@ -345,7 +364,7 @@ a {
 
   .navbar{
 
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
   
   }
 

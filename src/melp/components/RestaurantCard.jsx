@@ -32,13 +32,15 @@ export const RestaurantCard = ({ name, rating, contact, address, id, }) => {
 
                     <div className="card-footer text-center">
 
-                        <button
-                            className="btn btn-outline-primary"
-                        >
-                            <Link to={`/restaurant/${id}`} style={{ textDecoration: 'none' }}>
+
+                        <Link to={`/restaurant/${id}`} style={{ textDecoration: 'none' }}>
+                            <button
+                                className="btn btn-outline-primary"
+                            >
                                 More
-                            </Link>
-                        </button>
+                            </button>
+                        </Link>
+
 
                     </div>
 

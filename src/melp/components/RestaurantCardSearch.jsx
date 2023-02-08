@@ -21,7 +21,7 @@ export const RestaurantCardSearch = ({
         <div className="card mb-3">
             <div className="row g-0">
                 <div className="col-md-4">
-                <img src={restaurantImageUrl} className="card-img-top" alt={ name } />
+                <img src={restaurantImageUrl} className="img-card-search card-img-top" alt={ name } />
                 </div>
                 <div className="col-md-8">
                 <div className="card-body">
@@ -30,7 +30,10 @@ export const RestaurantCardSearch = ({
                         <li className="list-group-item  bg-light">State: { address.state }</li>
                         <li className="list-group-item  bg-light">City: { address.city }</li>
                         <li className="list-group-item  bg-light">
-                            <Link to={`/restaurant/${ id }`}>
+                            <Link 
+                                to={`/restaurant/${ id }`}
+                                className="btn btn-outline-primary"
+                            >
                                         More
                             </Link>
                         </li>
