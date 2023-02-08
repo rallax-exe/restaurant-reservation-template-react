@@ -72,7 +72,20 @@ a {
 
 .navbar{
 
-  padding: 2rem 2rem;
+  padding: 1rem 10rem;
+
+}
+
+.navbar-logo{
+
+  width: 3.8rem;
+
+}
+
+.navbar-logo-text{
+
+  font-size: 2.5rem;
+  color: #F2F2F2;
 
 }
 
@@ -352,6 +365,12 @@ a {
 
     flex-direction: column;
     align-items: center;
+
+  }
+
+  .navbar-logo-text{
+
+    display: none;
 
   }
 

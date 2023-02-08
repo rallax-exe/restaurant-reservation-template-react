@@ -27,9 +27,10 @@ export const Navbar = () => {
             <nav className="navbar navbar-dark bg-dark fixed-top">
                 <div className="container-fluid">
                     <NavLink
-                        //classNameName={({ isActive }) => `nav-item  nav-link ${isActive ? 'active' : ''}`}
+                        //classNameName={({ isActive }) => `nav-item  nav-link ${isActive ? 'active' : ''}`}                        
                         to="/restaurants"
                     >
+                        <span className="navbar-logo-text">Melp</span>
                         <img className="navbar-logo" src="../../../assets/images/navbar/logo.png" />
                     </NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -44,7 +45,8 @@ export const Navbar = () => {
                             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li 
                                     className="nav-item"
-                                    data-bs-toggle="#offcanvas"
+                                    data-bs-dismiss="offcanvas" 
+                                    data-bs-target="#my-offcanvas" 
                                 >
                                     <NavLink
                                         className="nav-link active"
@@ -56,7 +58,8 @@ export const Navbar = () => {
                                 </li>
                                 <li 
                                     className="nav-item"
-                                    data-bs-toggle="#offcanvas"
+                                    data-bs-dismiss="offcanvas" 
+                                    data-bs-target="#my-offcanvas"
                                 >
                                     <NavLink
                                         className="nav-link active"
@@ -68,7 +71,8 @@ export const Navbar = () => {
                                 </li>                               
                                 <li 
                                     className="nav-item"
-                                    data-bs-toggle="#offcanvas"
+                                    data-bs-dismiss="offcanvas" 
+                                    data-bs-target="#my-offcanvas"
                                 >
                                     <NavLink
                                         className="nav-link active"
