@@ -13,7 +13,6 @@ export const AppRouter = () => {
         <ScrollToTop />
         <Routes>
           <Route path="search" element={<Search />} />
-          <Route path="restaurants" element={<Restaurants />} />
           <Route path="contact" element={<Contact />} />
           <Route path="restaurant/:id" element={<Restaurant />} />
           <Route path="/" element={<Restaurants />} />
